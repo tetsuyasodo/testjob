@@ -1,0 +1,5 @@
+---
+- name: リソースグループを作成
+  azure_rm_resourcegroup:
+    name: TestingAnsible
+    location: japaneast
