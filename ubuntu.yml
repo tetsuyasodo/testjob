@@ -1,3 +1,6 @@
-tasks:
-  - name: install ntp
-    apt: name=ntp update_cache=yes
+- name: Ubuntu job
+  become: true
+  hosts: all
+  tasks:
+    - name: install ntp
+      apt: name=ntp update_cache=yes
